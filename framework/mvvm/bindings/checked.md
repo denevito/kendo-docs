@@ -44,9 +44,9 @@ Unchecking a checkbox will remove its `value` attribute from the array. Here is 
 
 #### Using the `checked` binding with a list of checkboxes
 
-    <input type="checkbox" value="Red"   data-bind="checked: colors" />
-    <input type="checkbox" value="Green" data-bind="checked: colors" />
-    <input type="checkbox" value="Blue"  data-bind="checked: colors" />
+    <input type="checkbox" id="colors1" value="Red"   data-bind="checked: colors" />
+    <input type="checkbox" id="colors2" value="Green" data-bind="checked: colors" />
+    <input type="checkbox" id="colors3" value="Blue"  data-bind="checked: colors" />
     <script>
     var viewModel = kendo.observable({
         colors: ["Red"]
@@ -70,9 +70,9 @@ attribute is equal to the new value.
 
 ### Using the `checked` binding with a group of radio buttons
 
-    <input type="radio" value="Red"   name="color" data-bind="checked: selectedColor" />
-    <input type="radio" value="Green" name="color" data-bind="checked: selectedColor" />
-    <input type="radio" value="Blue"  name="color" data-bind="checked: selectedColor" />
+    <input type="radio" value="Red" id="colors1"  name="color" data-bind="checked: selectedColor" />
+    <input type="radio" value="Green" id="colors2" name="color" data-bind="checked: selectedColor" />
+    <input type="radio" value="Blue" id="colors3" name="color" data-bind="checked: selectedColor" />
     <script>
     var viewModel = kendo.observable({
         selectedColor: "Green"
@@ -101,11 +101,11 @@ Checkbox inputs bound to an array and radio buttons also support strong typing, 
         <input type="checkbox" name="items" data-bind="checked: items" value="true" data-type="boolean"/>
         <input type="checkbox" name="items" data-bind="checked: items" value="2015-01-31" data-type="date"/>
         
-        <input type="radio" name="group" data-type="date" data-bind="checked: group" value="2015-01-31"/>
-        <input type="radio" name="group" data-type="datetime-local" data-bind="checked: group" value="2013-06-05T23:13:40"/>
-        <input type="radio" name="group" data-type="text" data-bind="checked: group" value="Hello"/>
-        <input type="radio" name="group" data-type="number" data-bind="checked: group" value="3.14"/>
-        <input type="radio" name="group" data-type="boolean" data-bind="checked: group" value="false"/>
+        <input type="radio" id="group1" name="group" data-type="date" data-bind="checked: group" value="2015-01-31"/>
+        <input type="radio" id="group2" name="group" data-type="datetime-local" data-bind="checked: group" value="2013-06-05T23:13:40"/>
+        <input type="radio" id="group3" name="group" data-type="text" data-bind="checked: group" value="Hello"/>
+        <input type="radio" id="group4" name="group" data-type="number" data-bind="checked: group" value="3.14"/>
+        <input type="radio" id="group5" name="group" data-type="boolean" data-bind="checked: group" value="false"/>
     </div>
     <script>
         var viewModel = kendo.observable({
